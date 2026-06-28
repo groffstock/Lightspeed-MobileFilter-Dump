@@ -1,0 +1,2805 @@
+// Swift reflection (__swift5_fieldmd) — 392 types with stored fields
+class ReachabilityManager {
+    let NetworkReachabilityChanged: Name
+    let reachability: SCNetworkReachability
+    let queue: OS_dispatch_queueC
+    var currentReachabilityFlags: SCNetworkReachabilityFlags
+    var isListening: Bool
+}
+
+struct Name {
+    var _rawValue: NSStringC
+}
+
+struct SCNetworkReachabilityFlags {
+    let rawValue: T
+}
+
+struct FileAttributeKey {
+    var _rawValue: NSStringC
+}
+
+struct NSKeyValueChangeKey {
+    var _rawValue: NSStringC
+}
+
+struct TelemetryResponse {
+    let data: TelemetryDataModel
+}
+
+struct TelemetryParameters {
+    let agent_type: String
+    let agent_version: String
+    let customer_id: String
+    let os: String
+    let product: String
+    let udid: String
+    let username: String
+}
+
+struct TelemetryDataModel {
+    let item: TelemetryItem
+}
+
+enum CodingKeys {
+    let data: ?
+}
+
+enum CodingKeys {
+    let agent_type: ?
+    let agent_version: ?
+    let customer_id: ?
+    let os: ?
+    let product: ?
+    let udid: ?
+    let username: ?
+}
+
+struct TelemetryItem {
+    let agent_type: String
+    let agent_version: String
+    let customer_id: String
+    let os: String
+    let product: String
+    let udid: String
+    let username: String
+}
+
+enum CodingKeys {
+    let item: ?
+}
+
+enum CodingKeys {
+    let agent_type: ?
+    let agent_version: ?
+    let customer_id: ?
+    let os: ?
+    let product: ?
+    let udid: ?
+    let username: ?
+}
+
+class NetworkManager {
+    let policyPath: String
+    let encoder: T
+    var filterConfiguration: NEFilterProviderConfigurationC?
+    let apiRouter: T
+    var _currentUser: T?
+    var _customerID: String?
+    var udid: String?
+    var image: T?
+}
+
+struct VerdictResult {
+    let timeStamp: T
+    let encodingTime: T?
+    let url: T
+    let application: String
+    let localIP: String
+    let reason: VerdictReason
+    let inASR: Bool?
+}
+
+optional VerdictReason {
+    let allowedWithCategory: category_t
+    let allowedButRequiresQueryParameter: param_t
+    let allowedInternalWhitelist: type_t
+    let allowedExplicitlyHost: match_t
+    let allowedExplicitlyWild: match_t
+    let allowedExplicitlyVideo: match_t
+    let categoryHostBlocked: category_t
+    let customCategoryHostBlocked: category_t
+    let categoryVideoBlocked: category_t
+    let customCategoryVideoBlocked: category_t
+    let blockedExplicitlyHost: match_t
+    let blockedExplicitlyWild: match_t
+    let blockedExplicitlyVideo: match_t
+    let searchTermBlocked: term_t
+    let categorySealedBlocked: category_t
+    let allowed: ?
+    let allowedLicenseLapsed: ?
+    let allowedConversationFragment: ?
+    let allowedASRUnfiltered: ?
+    let mustAskServer: ?
+    let allowedJwtString: ?
+    let blockedUnclassifiedVideo: ?
+    let blockedASRShutdown: ?
+    let blockedLookupFailed: ?
+    let blockedParentPause: ?
+    let requiresRemediationUpdate: ?
+}
+
+enum CodingKeys {
+    let timeStamp: ?
+    let encodingTime: ?
+    let url: ?
+    let application: ?
+    let localIP: ?
+    let reason: ?
+    let inASR: ?
+}
+
+enum VerdictAction {
+    let allowed: ?
+    let blocked: ?
+    let mustAskServer: ?
+    let requiresRemediationUpdate: ?
+}
+
+enum CodingKeys {
+    let allowed: ?
+    let allowedLicenseLapsed: ?
+    let allowedWithCategory: ?
+    let allowedConversationFragment: ?
+    let allowedInternalWhitelist: ?
+    let allowedExplicitlyHost: ?
+    let allowedExplicitlyWild: ?
+    let allowedExplicitlyVideo: ?
+    let allowedButRequiresQueryParameter: ?
+    let allowedASRUnfiltered: ?
+    let mustAskServer: ?
+    let categoryHostBlocked: ?
+    let customCategoryHostBlocked: ?
+    let categoryVideoBlocked: ?
+    let customCategoryVideoBlocked: ?
+    let blockedExplicitlyHost: ?
+    let blockedExplicitlyWild: ?
+    let blockedExplicitlyVideo: ?
+    let blockedUnclassifiedVideo: ?
+    let blockedASRShutdown: ?
+    let blockedLookupFailed: ?
+    let blockedParentPause: ?
+    let searchTermBlocked: ?
+    let categorySealedBlocked: ?
+    let requiresRemediationUpdate: ?
+    let allowedJwtString: ?
+}
+
+enum VerdictDetailsCodingError {
+    let decoding: String
+}
+
+class T {
+    var _signalCoreDevicesApiBaseURL: String?
+    var _baseURL: String?
+    var _apiKey: String?
+    var _categorizationDeviceApiURL: String?
+    var _categorizationDeviceApiKey: String?
+    var _agentBackendApiURL: String?
+    var _licenseApiKey: String?
+    var _telemetryApiKey: String?
+    var _baseTrustedAppsURL: String?
+}
+
+struct TimeoutIndicator {
+    let declaredDate: T
+}
+
+enum CodingKeys {
+    let declaredDate: ?
+}
+
+enum? JSONViewController {
+    var textView: UITextViewC?
+    var textContent: String?
+}
+
+class ReportPayload {
+    let report: Report
+}
+
+struct Report {
+    let users: SaySSG
+    let hosts: SaySSG
+    let protocols: SaySSG
+    let actions: SayTG
+    let rv: Int
+    let ip: String
+    let osInfo: SG
+    let sn: String
+    let udid: String
+}
+
+struct ActionEntry {
+    let userIndex: Int
+    let hostIndex: Int
+    let protocolIndex: Int
+    let blocked: Bool
+    let categoryID: Int
+    let path: String
+    let queryString: String
+    let timeStampString: String
+    let rulesetID: Int
+    let guid: String
+    let requestType: Int
+    let userData: UserDataType
+}
+
+enum CodingKeys {
+    let report: ?
+}
+
+enum CodingKeys {
+    let users: ?
+    let hosts: ?
+    let protocols: ?
+    let actions: ?
+    let rv: ?
+    let ip: ?
+    let osInfo: ?
+    let sn: ?
+    let udid: ?
+}
+
+struct UserDataType {
+    let r: String
+    let asr: Bool
+}
+
+enum CodingKeys {
+    let r: ?
+    let asr: ?
+}
+
+class AppStats {
+    var socketStats: SayTG
+    var browserStats: SayTG
+    let appStatsSemaphore: OS_dispatch_semaphoreC
+}
+
+struct AppStat {
+    var appId: String
+    var count: Int
+}
+
+enum CodingKeys {
+    let appId: ?
+    let count: ?
+}
+
+enum? FilterDataProvider {
+    var policy: T
+    var policyFetchedDate: T
+    var proxySettingsFetchedDate: T
+    let proxySettingsCacheTime: Double
+    var loggingURLs: ShyTG
+    let semaphoreForLoggingURLs: OS_dispatch_semaphoreC
+    var remediationURLs: ShyTG
+    let semaphoreForRemediationURLs: OS_dispatch_semaphoreC
+    var lookupURLs: SDyTTG
+    let semaphoreForLookupURLs: OS_dispatch_semaphoreC
+    var logInterval: Double
+    var cleanupLastSweep: T
+    var ipString: String?
+    var ipRetrievalDate: T?
+    var uname: T?
+    var trustedApps: T?
+}
+
+enum? FilterControlProvider {
+    let encoder: T
+    let decoder: T
+    var policy: T
+    var policyFetchedDate: T
+    var digitalEquity: T?
+    var signalManager: T?
+    var cfg: T?
+    var diConfigExpiredDate: T
+    var relayIpTTL: T
+    var relayIpTTLTimer: NSTimerC?
+    var retryRelayTimeout: T
+    var retryRelayTimer: NSTimerC?
+    var retryRelayTimerTries: T
+    var retryRelayTimerTriesMax: T
+    var supervisorTimer: NSTimerC?
+    var globalProxyTimer: NSTimerC?
+    let apiRouter: T
+    var rocketIPV4Socket: T
+    var rocketConnectedSuccessfully: Bool
+    var globalProxyTimerInterval: T
+    let yourIpUrlAdd: String
+    let userPolicyAdd: String
+    let reportAdd: String
+    let hostLookupAdd: String
+    let appAnalyticAdd: String
+    let NetworkReachabilityChanged: Name
+    let reachabilityManager: ReachabilityManager
+    var networkObserver: NSObject_p?
+    let networkManager: NetworkManager
+    let hostContainerSemaphore: OS_dispatch_semaphoreC
+    var hostCallbackContainer: SDySSSayTGG
+    var hostFailedCategorizationCount: Int
+    var hostsToFetchOnReconnect: SaySSG
+    let verdictContainerSemaphore: OS_dispatch_semaphoreC
+    var verdictList: SayTG
+    var verdictLastLogged: T
+    var lastVerdictFileScrubDate: T
+    var trustedApps: T?
+    let _lastPolicyFetchAttemptSemaphore: OS_dispatch_semaphoreC
+    var _lastPolicyFetchAttempt: T
+    var uname: T?
+    let policyFetchOnlyOneAtATimeSemaphore: OS_dispatch_semaphoreC
+    var lastPolicyUsername: String
+    var appStats: AppStats
+    var appUsageTimerTimeout: T
+    var appUsageTimer: NSTimerC?
+    var licenseCheckTimer: NSTimerC?
+    var telemetryTimer: NSTimerC?
+    let pathMonitor: T
+    let pathMonitorQueue: OS_dispatch_queueC
+    var lastGateway: T?
+}
+
+struct FlowInfo {
+    let callback: NEFilterControlVerdictCc
+    let url: T
+    let timeStamp: T
+    let applicationID: String
+    let myIP: String
+    let isBrowserFlow: Bool
+}
+
+enum PolicyError {
+    let policyBlackout: ?
+    let undefinedUser: ?
+    let policyServerError: ?
+}
+
+enum? ViewController {
+    var backgroundImage: UIImageViewCSgXw
+    var logoIcon: UIImageViewCSgXw
+    var logoText: UIImageViewCSgXw
+    var explanatoryLabel: UILabelCSgXw
+    var schoolNameLabel: UILabelCSgXw
+    var filterVersionLabel: UILabelCSgXw
+    var deviceIDLabel: UILabelCSgXw
+    var reviewLicensesLabel: UILabelCSgXw
+    var policyServerLabel: UILabelCSgXw
+    var policyDateLabel: UILabelCSgXw
+    var usernameLabel: UILabelCSgXw
+    var serverAddressLabel: UILabelCSgXw
+    var statusIndicatorView: UIViewCSgXw
+    var toggleRulesButton: UIButtonCSgXw
+    var pincher: UIPinchGestureRecognizerC?
+    var tapper: UITapGestureRecognizerC?
+    var reviewer: UITapGestureRecognizerC?
+    var speedTester: UITapGestureRecognizerC?
+    var showHidden: UITapGestureRecognizerC?
+    let networkManager: NetworkManager
+    let shortVersion: String
+    let buildVersion: String
+}
+
+struct Uname {
+    var sysname: String
+    var nodename: String
+    var release: String
+    var version: String
+    var machine: String
+}
+
+enum CodingKeys {
+    let sysname: ?
+    let nodename: ?
+    let release: ?
+    let version: ?
+    let machine: ?
+}
+
+enum UnameError {
+    let errno: code_SS11descriptiont
+}
+
+struct VariablesInput {
+    let item: x
+}
+
+struct GraphqlOperation {
+    var input: x
+    var operationString: String
+}
+
+enum CodingKeys {
+    let variables: ?
+    let query: ?
+}
+
+enum CodingKeys {
+    let item: ?
+}
+
+class ProxyConnection {
+    var finishedCallback: ySbc?
+    let nwConnection: T
+}
+
+enum? BlockedPageViewController {
+    var blockedURL: T?
+    var logoIcon: UIImageViewCSgXw
+    var logoText: UIImageViewCSgXw
+    var schoolNameLabel: UILabelCSgXw
+    var filterVersionLabel: UILabelCSgXw
+    var deviceIDLabel: UILabelCSgXw
+    var policyServerLabel: UILabelCSgXw
+    var sorryLabel: UILabelCSgXw
+    var domainNameLabel: UILabelCSgXw
+    var categoryLabel: UILabelCSgXw
+    var toggleRulesButton: UIButtonCSgXw
+}
+
+struct CategorizationDeviceParameters {
+    let hostname: String
+    let customerId: String
+}
+
+struct HostLookupResponse {
+    let data: DataModel
+}
+
+struct DataModel {
+    let response: LookupResponse
+}
+
+enum CodingKeys {
+    let data: ?
+}
+
+enum CodingKeys {
+    let hostname: ?
+    let customerId: ?
+}
+
+struct LookupResponse {
+    let request: LookupRequest
+    let cat: Int
+    let action: String
+}
+
+enum CodingKeys {
+    let response: ?
+}
+
+struct LookupRequest {
+    let host: String
+}
+
+enum CodingKeys {
+    let request: ?
+    let cat: ?
+    let action: ?
+}
+
+enum CodingKeys {
+    let host: ?
+}
+
+struct Alert {
+    let view: UIViewControllerC
+}
+
+class FileBasedCache {
+    var topCacheDirectory: T
+    let appGroupURL: T
+    let minimumPolicyURL: T
+    var lastPolicy: T?
+    var lastPolicyDiskMTime: T
+    var _fallbackPolicy: T?
+}
+
+class RepeatTimer {
+    var timerState: TimerState
+    let timeInterval: Double
+    var eventHandler: yyc?
+    var $__lazy_storage_$_repeatTimer: OS_dispatch_source_timer_p?
+}
+
+enum TimerState {
+    let suspended: ?
+    let resumed: ?
+    let canceled: ?
+}
+
+protocol MobileFilter27GlobalProxySettingsDelegateP {
+}
+
+class GlobalProxySettingsManager {
+    let fileDownloader: T
+    var proxyConnection: T?
+    let serialQueue: OS_dispatch_queueC
+    var userDefaults: NSUserDefaultsC?
+    var jwt: T_p?
+    var _jwtString: String?
+    var _setupStatus: setupValue
+    var _pacURL: String?
+    var _bouncerHostname: String?
+    var _bypassDomainsExact: SaySSG?
+    var _bypassDomainsWild: SaySSG?
+    var _rocketIdent: String?
+    var _rocketProxyIdent: String?
+    var _requiresReload: Bool
+    var proxyAddress: String?
+    var _proxyAvailable: Bool
+}
+
+enum setupValue {
+    let setupComplete: ?
+    let requiresSetup: ?
+}
+
+enum? ReviewLicensesViewController {
+    var cancelReviewLicenses: UILabelC?
+    var cancelReviewer: UITapGestureRecognizerC?
+    var licensesLabel: UILabelCSgXw
+}
+
+enum? AppDelegate {
+    var window: UIWindowC?
+}
+
+class TrustedAppList {
+    let fileDownloader: T
+    let appGroupContainerURL: T?
+    let listID: String
+    var fileContent: TrustedAppsFileContent
+    var downloadFailed: Bool
+    var _downloadURL: T?
+}
+
+enum? TrustedApps {
+    var customerList: TrustedAppList
+    var globalList: TrustedAppList
+    var customerID: String
+    var lastUpdated: T
+}
+
+struct TrustedAppsFileContent {
+    let name: String
+    let version: String
+    let updated_at: Int
+    let apps: SayTG
+}
+
+struct TrustedAppBundleId {
+    let bundleid: String
+}
+
+enum CodingKeys {
+    let name: ?
+    let version: ?
+    let updated_at: ?
+    let apps: ?
+}
+
+enum CodingKeys {
+    let bundleid: ?
+}
+
+struct User {
+    let userEmail: String
+}
+
+enum CodingKeys {
+    let userEmail: ?
+}
+
+enum LogLevel {
+    let Info: ?
+    let Error: ?
+    let Debug: ?
+}
+
+enum LicenseStatus {
+    let grace_period: ?
+    let grace_period_no_reporting: ?
+    let grace_period_disabled: ?
+    let expired: ?
+    let licensed: ?
+    let unlicensed: ?
+}
+
+struct LicenseCheckResponse {
+    let data: LicenseDataModel
+}
+
+struct LicenseResponse {
+    let check_interval: Int
+    let digital_insight: ServiceLicense
+    let filter: ServiceLicense
+    let signal_internet: ServiceLicense
+    let signal_app: ServiceLicense
+    let signal_device: ServiceLicense
+}
+
+struct LicenseCheckParameters {
+    let customer_id: String
+}
+
+struct LicenseDataModel {
+    let item: LicenseResponse
+}
+
+struct ServiceLicense {
+    let status: LicenseStatus
+    let expires_at: String
+}
+
+enum CodingKeys {
+    let data: ?
+}
+
+enum CodingKeys {
+    let check_interval: ?
+    let digital_insight: ?
+    let filter: ?
+    let signal_internet: ?
+    let signal_app: ?
+    let signal_device: ?
+}
+
+enum CodingKeys {
+    let customer_id: ?
+}
+
+enum CodingKeys {
+    let item: ?
+}
+
+enum CodingKeys {
+    let status: ?
+    let expires_at: ?
+}
+
+struct Videos {
+    let mode: Mode
+}
+
+struct Videos {
+    let youtubeHideThumbnails: Bool?
+    let youtubeHideComments: Bool?
+    let mode: Mode
+    let smartPlay: SmartPlay
+}
+
+struct ContentFilter {
+    let categories: Categories
+    let googleForceSafesearch: Bool?
+    let bypassOnFailure: Bool
+    let chromebookOnly: Bool
+    let googleFilterDomainsList: String?
+    let googleFilterThumbnails: Bool?
+    let lists: Lists
+}
+
+struct Licensing {
+    let interval: Double
+    let timeStamp: T
+    let digitalInsight: Service
+    let filter: Service
+    let signal_app: Service
+    let signal_device: Service
+    let signal_internet: Service
+}
+
+struct Service {
+    let status: LicenseStatus
+    let expiration: T
+}
+
+struct Lists {
+    let allowed: SayTG?
+    let blocked: SayTG?
+    let keywords: SayTG?
+}
+
+struct SmartPlay {
+    let allowedCategoryIds: SaySiG?
+    let blockedCategoryIds: SaySiG?
+    let blockOtherVideos: Bool
+}
+
+struct TimeBlock {
+    let start: String
+    let end: String
+}
+
+struct Mode {
+    let state: String
+    let weekdayBlock: TimeBlock
+    let weekendBlock: TimeBlock
+}
+
+struct ASR {
+    let mode: Mode
+    let ipRanges: SaySSG?
+}
+
+struct Mode {
+    let blocked: Bool
+    let videoMode: String?
+}
+
+struct ASRPolicy {
+    let contentFilter: ContentFilter
+    let videos: Videos
+    let pause_until: Int?
+}
+
+struct T {
+    var _fileBasedCache: T?
+    var licensing: T?
+    let contentFilter: ContentFilter
+    let videos: Videos
+    let version: String
+    let canOverride: Bool
+    let flaggedTerms: SaySSG?
+    let asr: ASR
+    let asrPolicy: ASRPolicy
+    let flagSettings: SGG?
+    let fetchedDate: T
+    var userIp: String
+    let generatedAt: Int
+    let lsCategories: SayTG
+    var rocketIdent: String
+    var rocketProxyIdent: String
+    let coEntKey: String?
+    var ios_trusted_apps_timestamp: Int?
+}
+
+struct LSCategory {
+    let id: Int
+    let categoryId: Int
+    let name: String
+    let shortDesc: String
+}
+
+struct Mode {
+    let blocked: Bool
+}
+
+struct Categories {
+    let blocked: SaySiG
+    let overrides: SaySiG
+    let lockouts: SaySiG
+}
+
+struct DomainList {
+    let host: String
+    let display: String
+    let flaggable: Bool
+}
+
+struct BlockedSearchTerm {
+    let w: String
+    let regexable: Bool?
+}
+
+struct ContentFilter {
+    let categories: Categories
+    let mode: String?
+    let reporting: Bool?
+}
+
+enum CodingKeys {
+    let id: ?
+    let categoryId: ?
+    let name: ?
+    let shortDesc: ?
+}
+
+enum CodingKeys {
+    let contentFilter: ?
+    let videos: ?
+    let version: ?
+    let canOverride: ?
+    let flaggedTerms: ?
+    let flagSettings: ?
+    let asr: ?
+    let asrPolicy: ?
+    let fetchedDate: ?
+    let userIp: ?
+    let generatedAt: ?
+    let lsCategories: ?
+    let rocketIdent: ?
+    let rocketProxyIdent: ?
+    let coEntKey: ?
+    let licensing: ?
+}
+
+enum CodingKeys {
+    let contentFilter: ?
+    let pause_until: ?
+    let videos: ?
+}
+
+enum CodingKeys {
+    let videoMode: ?
+    let blocked: ?
+}
+
+enum CodingKeys {
+    let mode: ?
+    let ipRanges: ?
+}
+
+enum CodingKeys {
+    let state: ?
+    let weekdayBlock: ?
+    let weekendBlock: ?
+}
+
+enum CodingKeys {
+    let start: ?
+    let end: ?
+}
+
+enum CodingKeys {
+    let allowedCategoryIds: ?
+    let blockedCategoryIds: ?
+    let blockOtherVideos: ?
+}
+
+enum CodingKeys {
+    let allowed: ?
+    let blocked: ?
+    let keywords: ?
+}
+
+enum CodingKeys {
+    let status: ?
+    let expiration: ?
+}
+
+enum CodingKeys {
+    let interval: ?
+    let timeStamp: ?
+    let digitalInsight: ?
+    let filter: ?
+    let signal_app: ?
+    let signal_device: ?
+    let signal_internet: ?
+}
+
+struct SearchEngine {
+    let name: String
+    let hostnameMatchString: String
+    let skipIfHostContains: SaySSG
+    let queryParams: SaySSG
+    let skipPaths: SaySSG
+}
+
+struct Categories {
+    let blocked: SaySiG
+    let overrides: SaySiG
+    let lockouts: SaySiG
+    let readOnly: SaySiG
+}
+
+enum CodingKeys {
+    let googleForceSafesearch: ?
+    let bypassOnFailure: ?
+    let chromebookOnly: ?
+    let googleFilterDomainsList: ?
+    let googleFilterThumbnails: ?
+    let categories: ?
+    let lists: ?
+}
+
+enum CodingKeys {
+    let mode: ?
+    let smartPlay: ?
+    let youtubeHideThumbnails: ?
+    let youtubeHideComments: ?
+}
+
+enum CodingKeys {
+    let categories: ?
+    let mode: ?
+    let reporting: ?
+}
+
+enum CodingKeys {
+    let mode: ?
+}
+
+enum CodingKeys {
+    let host: ?
+    let display: ?
+    let flaggable: ?
+}
+
+enum CodingKeys {
+    let w: ?
+    let regexable: ?
+}
+
+enum CodingKeys {
+    let blocked: ?
+    let overrides: ?
+    let lockouts: ?
+}
+
+enum CodingKeys {
+    let blocked: ?
+}
+
+enum CodingKeys {
+    let blocked: ?
+    let overrides: ?
+    let lockouts: ?
+    let readOnly: ?
+}
+
+struct PolicyRequestParams {
+    let userEmail: String
+    let udid: String
+    let platform: String
+    let agentVersion: String
+    let lastPolicyEpochMS: Int
+}
+
+enum CodingKeys {
+    let userEmail: ?
+    let udid: ?
+    let platform: ?
+    let agentVersion: ?
+    let lastPolicyEpochMS: ?
+}
+
+enum? VerdictLogTableViewController {
+    let policySection: Int
+    let trustedAppsSection: Int
+    let configSection: Int
+    let verdictSection: Int
+    let domainSection: Int
+    let categorySection: Int
+    var verdictList: SayTG
+    var domainList: SayTG
+    var categoryList: SayTG
+    var trustedApps: T?
+}
+
+enum? T {
+    var eTag: String?
+    var config: NSURLSessionConfigurationC
+    var session: NSURLSessionC?
+}
+
+struct Domain {
+    let categoryID: Int
+    let host: String
+    let fetchedDate: T
+}
+
+enum CodingKeys {
+    let categoryID: ?
+    let host: ?
+    let fetchedDate: ?
+}
+
+class ResourceBundleClass {
+}
+
+enum? _JWT {
+    var jwt: T_p
+}
+
+optional DecodeError {
+    let invalidBase64Url: String
+    let invalidJSON: String
+    let invalidPartCount: SS_Sit
+}
+
+protocol JWTDecode3JWTP {
+}
+
+struct Claim {
+    let value: Any?
+}
+
+struct T {
+    let header: SDySSypG
+    let body: SDySSypG
+    let signature: String?
+    let string: String
+}
+
+struct IDTokenValidation {
+    let issuer: String
+    let audience: String
+}
+
+enum ValidationError {
+    let invalidClaim: String
+    let expired: ?
+    let nonce: ?
+}
+
+protocol JWTDecode12ValidatorJWTP {
+}
+
+class BundleFinder {
+}
+
+struct res_9_sockaddr_union {
+}
+
+struct __res_9_state {
+    var retrans: T
+    var retry: T
+    var options: UInt
+    var nscount: T
+    var nsaddr_list: sockaddr_in
+    var id: T
+    var dnsrch: Ct
+    var defdname: At
+    var pfcode: UInt
+    var unused: At
+    var qhook: res_9_sendhookact
+    var rhook: res_9_sendhookact
+    var res_h_errno: T
+    var _vcsock: T
+    var _flags: T
+    var _pad: T
+    var _u: __Unnamed_union__u
+}
+
+struct sockaddr_in {
+    var sin_len: T
+    var sin_family: T
+    var sin_port: T
+    var sin_addr: in_addr
+    var sin_zero: At
+}
+
+struct sockaddr {
+    var sa_len: T
+    var sa_family: T
+    var sa_data: At
+}
+
+struct res_9_sendhookact {
+    var rawValue: T
+}
+
+struct __Unnamed_union__u {
+}
+
+struct os_unfair_lock_s {
+    var _os_unfair_lock_opaque: T
+}
+
+struct in_addr {
+    var s_addr: T
+}
+
+class DeviceInformation {
+    var Version: String
+    var DeviceId: String
+    var DeviceType: String
+    var UserHash: String
+    var EntitlementKey: String
+    var Platform: String
+    var IP: String
+    var Connected: Bool
+    var SpeedTest: SpeedTestResults
+    var DisconnectedInterval: DisconnectedInterval
+    var Location: Location
+}
+
+class SpeedTestResults {
+    var TransactionId: String
+    var UploadSize: T
+    var DownloadSize: T
+    var UploadDuration: T
+    var DownloadDuration: T
+    var RanAt: T
+    var Method: String
+    var ChunkSize: T
+    var UploadChunks: SayTG
+    var DownloadChunks: SayTG
+}
+
+class DisconnectedInterval {
+    var Start: T
+    var End: T
+    var Duration: T
+}
+
+class Location {
+    var lat: Double
+    var lon: Double
+}
+
+enum? RemoteConfig {
+    var endpointURL: String
+    var active: Bool
+    var checkinInterval: Int
+    var collectPII: Bool
+    var digitalEquityActive: Bool
+    var speedTestActive: Bool
+    var locationDataActive: Bool
+    var maxPayload: Int
+    var chunkSize: Int
+    var chunkCount: Int
+    var minCheck: Int
+    var maxCheck: Int
+    var method: String
+    var digitalEquityURL: String
+    var speedTestURL: String
+}
+
+class DigitalEquity {
+    var logger: ySS_Ttc?
+    let session: NSURLSessionC
+    var equityPayload: DeviceInformation
+    var equityCheckTimeInterval: T
+    var equityCheckTimer: NSTimerC?
+    var remoteConfigTimer: NSTimerC?
+    var remoteCfg: RemoteConfig
+    let networkMonitor: T
+    let networkMonitorQueue: OS_dispatch_queueC
+    let networkStatusKey: String
+    var equityActive: Bool
+    var deviceIP: String
+    var newIpAddressDiscovered: Bool
+    var persistentStore: DEPersistentStoreProtocol
+    var nextValidSpeedTestTimestamp: Double?
+    var softSpeedTestDeadline: Double?
+    var lostConnectionTimestamp: Double?
+    var gainedConnectionTimestamp: Double?
+    var speedTestCfgFilePath: T?
+    var disconnectedLocation: Location
+}
+
+protocol InsightSpeedtest25DEPersistentStoreProtocolP {
+}
+
+class UserDefaultsPersistentStore {
+    let UDKeyNextValidTimestamp: String
+    let UDKeySoftSpeedTestDeadline: String
+    let UDKeyDisconnectedTimestamp: String
+    let UDKeyRecordedIPString: String
+    let UDKeyLocationLatitude: String
+    let UDKeyLocationLongitude: String
+    let userDefaults: NSUserDefaultsC
+}
+
+enum CodingKeys {
+    let Version: ?
+    let DeviceId: ?
+    let DeviceType: ?
+    let UserHash: ?
+    let EntitlementKey: ?
+    let Platform: ?
+    let SentAt: ?
+    let IP: ?
+    let Connected: ?
+    let SpeedTest: ?
+    let DisconnectedInterval: ?
+    let Location: ?
+}
+
+enum CodingKeys {
+    let TransactionId: ?
+    let UploadSize: ?
+    let DownloadSize: ?
+    let UploadDuration: ?
+    let DownloadDuration: ?
+    let RanAt: ?
+    let Method: ?
+    let ChunkSize: ?
+    let UploadChunks: ?
+    let DownloadChunks: ?
+}
+
+enum CodingKeys {
+    let Start: ?
+    let End: ?
+    let Duration: ?
+}
+
+enum CodingKeys {
+    let lat: ?
+    let lon: ?
+}
+
+enum CodingKeys {
+    let endpointURL: ?
+    let active: ?
+    let checkinInterval: ?
+    let collectPII: ?
+    let digitalEquityActive: ?
+    let speedTestActive: ?
+    let locationDataActive: ?
+    let maxPayload: ?
+    let chunkSize: ?
+    let chunkCount: ?
+    let minCheck: ?
+    let maxCheck: ?
+    let method: ?
+    let digitalEquityURL: ?
+    let speedTestURL: ?
+}
+
+enum SpeedTestError {
+    let unknownError: desc_t
+    let emptyResponse: ?
+}
+
+enum CABundle {
+    let FilePath: T
+    let SystemDefault: ?
+    let PackageBundle: ?
+}
+
+class LSJWT {
+    var $defaultActor: BD
+    let keyFetcher: �T
+    var kDict: SDySSTG
+}
+
+struct LSJWTSession {
+    var signer: T
+    var customerID: String
+    var times: Timestamps
+    var keyUse1: T
+    var keyUse2: T
+}
+
+struct AuthData {
+    var customerID: String
+}
+
+struct Timestamps {
+    var expiresAt: T
+    var notBefore: T
+    var issuedAt: T?
+}
+
+struct TimestampsConfig {
+    var expiresInt: Double
+    var notBeforeInt: Double
+    var issuedInterval: Double?
+}
+
+struct LSJWTPayload {
+    var customerID: String
+    var data: String
+    var expiresAt: T
+    var notBefore: T
+    var issuedAt: T?
+}
+
+enum CodingKeys {
+    let customerID: ?
+    let data: ?
+    let expiresAt: ?
+    let issuedAt: ?
+    let notBefore: ?
+}
+
+enum LSJWTError {
+    let invalidToken: ?
+    let imageTooSmall: ?
+}
+
+enum CodingKeys {
+    let customerID: ?
+}
+
+enum? LocationHandler {
+    var locationManager: CLLocationManagerC
+    var logger: ySS_Ttc?
+}
+
+struct SignalPolicyRequest {
+    var agentVersion: String
+    var customerID: String
+    var lastPolicyEpochMS: T
+    var platform: String
+    var localUserUPN: String?
+    var localDirectoryUsername: String?
+    var localUserEmail: String
+}
+
+struct SignalPolicy {
+    var userEmail: String
+    var userGUID: String
+    var generatedAt: T
+    var ip: String
+    var ASN: Int
+    var onCampus: Bool
+    var deviceReportingInterval: Int
+    var devicePolicyInterval: Int
+    var locationEnabled: Bool
+    var speedTestConfig: SpeedTestConfig
+    var appMonitorConfig: AppMonitorConfig
+    var genChromeUUID: Bool
+}
+
+enum CodingKeys {
+    let userEmail: ?
+    let userGUID: ?
+    let generatedAt: ?
+    let ip: ?
+    let ASN: ?
+    let onCampus: ?
+    let deviceReportingInterval: ?
+    let devicePolicyInterval: ?
+    let locationEnabled: ?
+    let speedTestConfig: ?
+    let appMonitorConfig: ?
+    let genChromeUUID: ?
+}
+
+enum FeatureStatus {
+    let enabled: ?
+    let disabled: ?
+}
+
+struct SpeedTestConfig {
+    var status: FeatureStatus
+    var speedTestURL: String
+    var testInterval: Int
+    var chunkCount: Int
+    var chunkSize: Int
+}
+
+enum CodingKeys {
+    let status: ?
+    let speedTestURL: ?
+    let testInterval: ?
+    let chunkCount: ?
+    let chunkSize: ?
+}
+
+struct AppMonitorConfig {
+    var status: FeatureStatus
+    var reportingInterval: T
+    var errorReportingInterval: T
+    var errorThreshold: Int
+    var appsUpdatedAt: T
+    var appsURL: String
+}
+
+enum CodingKeys {
+    let status: ?
+    let reportingInterval: ?
+    let errorReportingInterval: ?
+    let errorThreshold: ?
+    let appsUpdatedAt: ?
+    let appsURL: ?
+}
+
+optional SignalError {
+    let unknownURLResponse: NSURLResponseC8response_t
+    let fetchHTTPError: NSHTTPURLResponseC8response_t
+    let customerIDMismatch: got_SS8expectedt
+}
+
+struct Licenses {
+    var device: Bool
+    var app: Bool
+    var internet: Bool
+}
+
+class SignalManager {
+    var $defaultActor: BD
+    var policyURL: T
+    var reportURL: T
+    var policy: SignalPolicy
+    var customerID: String
+    var agentVersion: String
+    var userEmail: String
+    var serial: String
+    var lsjwt: LSJWT
+    var licenses: Licenses
+    var lastSpeedTestForASN: SDySiTG
+    var lastDeviceReport: T?
+    var lastPolicyUpdate: T?
+    var lastNetworkupdate: T?
+    let tsConfig: TimestampsConfig
+    let speedTestCABundle: CABundle
+    let speedTestCfgFilePath: T?
+    var policyTimer: NSTimerC?
+    let locationHandler: LocationHandler
+    var networkMonitor: T
+    var uname: T?
+    var hostName: String
+    var osVersion: String
+    var speedStateCachePath: T?
+    let cacheFile: String
+    var currentPath: T?
+    var ssid: String?
+    var signalStrength: Double?
+    var logger: ySS_Ttc?
+    var queue: OS_dispatch_queueC
+    var scheduled: Bool
+}
+
+struct SignalReport {
+    var EventAt: T
+    var customerID: String
+    var userEmail: String
+    var localUserEmail: String?
+    var localUserUPN: String
+    var localUsername: String
+    var externalIP: String
+    var agent: SignalAgent
+    var device: SignalDevice
+    var internet: SignalInternet
+    var networkInterfaces: SayTG?
+}
+
+enum CodingKeys {
+    let EventAt: ?
+    let customerID: ?
+    let userEmail: ?
+    let localUserEmail: ?
+    let localUserUPN: ?
+    let localUsername: ?
+    let externalIP: ?
+    let agent: ?
+    let device: ?
+    let internet: ?
+    let networkInterfaces: ?
+}
+
+enum Trigger {
+    let logIn: ?
+    let networkChange: ?
+    let deviceReport: ?
+    let speedReport: ?
+}
+
+struct SignalAgent {
+    var type: String
+    var version: String
+    var trigger: Trigger
+}
+
+struct SignalDevice {
+    var name: String
+    var platform: String
+    var osVersion: String
+    var serialNumber: String
+    var manufacturer: String
+    var assetTag: String
+    var model: String
+    var memory: SignalByteUsage
+    var storage: SignalByteUsage
+    var processor: SignalProcessor
+    var battery: SignalBattery
+    var location: SignalLocation
+}
+
+enum CodingKeys {
+    let name: ?
+    let platform: ?
+    let osVersion: ?
+    let serialNumber: ?
+    let manufacturer: ?
+    let assetTag: ?
+    let model: ?
+    let memory: ?
+    let storage: ?
+    let processor: ?
+    let battery: ?
+    let location: ?
+}
+
+struct SignalByteUsage {
+    var total: T
+    var used: T
+}
+
+struct SignalProcessor {
+    var type: String
+    var speed: T
+    var cores: T
+    var arch: String
+    var used: T
+}
+
+class SignalBattery {
+    var state: String
+    var level: T
+    var dischargeTime: T
+    var chargeTime: T
+}
+
+enum CodingKeys {
+    let state: ?
+    let level: ?
+    let dischargeTime: ?
+    let chargeTime: ?
+}
+
+struct SignalLocation {
+    var lat: Double
+    var lon: Double
+}
+
+struct SignalInternet {
+    var downloadSpeed: T
+    var uploadSpeed: T
+    var averageDNS: T
+    var averageResponse: T
+}
+
+struct SignalNetworkInterface {
+    var macAddress: String
+    var ipv6: String
+    var ipv4: String
+    var subnetMask: String
+    var gateway: String
+    var primaryDNS: String
+    var secondaryDNS: String
+    var type: String
+    var wifiSSID: String
+    var wifiSignal: String
+}
+
+enum CodingKeys {
+    let macAddress: ?
+    let ipv6: ?
+    let ipv4: ?
+    let subnetMask: ?
+    let gateway: ?
+    let primaryDNS: ?
+    let secondaryDNS: ?
+    let type: ?
+    let wifiSSID: ?
+    let wifiSignal: ?
+}
+
+enum CodingKeys {
+    let agentVersion: ?
+    let customerID: ?
+    let lastPolicyEpochMS: ?
+    let platform: ?
+    let localUserUPN: ?
+    let localDirectoryUsername: ?
+    let localUserEmail: ?
+}
+
+enum CodingKeys {
+    let type: ?
+    let version: ?
+    let trigger: ?
+}
+
+enum CodingKeys {
+    let total: ?
+    let used: ?
+}
+
+enum CodingKeys {
+    let type: ?
+    let speed: ?
+    let cores: ?
+    let arch: ?
+    let used: ?
+}
+
+enum CodingKeys {
+    let lat: ?
+    let lon: ?
+}
+
+enum CodingKeys {
+    let downloadSpeed: ?
+    let uploadSpeed: ?
+    let averageDNS: ?
+    let averageResponse: ?
+}
+
+class Resolver {
+    var state: __res_9_state
+}
+
+struct InterfaceInfo {
+    var interfaceName: String
+    var interfaceAddress: String
+    var subnetMask: String
+    var hostName: String
+    var addressFamily: AddressFamily
+}
+
+enum AddressFamily {
+    let IPV4: ?
+    let IPV6: ?
+    let LINK: ?
+}
+
+enum LogLevel {
+    let Info: ?
+    let Error: ?
+    let Debug: ?
+}
+
+struct Uname {
+    var sysname: String
+    var nodename: String
+    var release: String
+    var version: String
+    var machine: String
+}
+
+enum UnameError {
+    let errno: code_SS11descriptiont
+}
+
+enum CodingKeys {
+    let sysname: ?
+    let nodename: ?
+    let release: ?
+    let version: ?
+    let machine: ?
+}
+
+struct InterfaceStatus {
+    var connected: Bool
+    var disconnected: Bool
+}
+
+enum CodingKeys {
+    let connected: ?
+    let disconnected: ?
+}
+
+class BlueECSigner {
+    let name: String
+    let key: T
+    let curve: T
+}
+
+class BlueECVerifier {
+    let name: String
+    let key: T
+    let curve: T
+}
+
+struct SecKeyAlgorithm {
+    let rawValue: CFString
+}
+
+class BlueHMAC {
+    let name: String
+    let key: T
+    let algorithm: T
+}
+
+class BlueRSA {
+    let name: String
+    let key: T
+    let keyType: T
+    let algorithm: T
+    let usePSS: Bool
+}
+
+protocol SwiftJWT6ClaimsP {
+}
+
+class ClaimsMicroProfile {
+    var iss: String
+    var sub: String
+    var exp: T
+    var iat: T
+    var jti: String
+    var upn: String?
+    var preferred_username: String?
+    var groups: SaySSG
+}
+
+enum CodingKeys {
+    let iss: ?
+    let sub: ?
+    let exp: ?
+    let iat: ?
+    let jti: ?
+    let upn: ?
+    let preferred_username: ?
+    let groups: ?
+}
+
+class ClaimsOpenID {
+    var iss: String
+    var sub: String
+    var aud: SaySSG
+    var exp: T
+    var iat: T
+    var auth_time: T?
+    var nonce: String?
+    var acr: String?
+    var amr: SaySSG?
+    var azp: String?
+    var name: String?
+    var given_name: String?
+    var family_name: String?
+    var middle_name: String?
+    var nickname: String?
+    var preferred_username: String?
+    var profile: String?
+    var picture: String?
+    var website: String?
+    var email: String?
+    var email_verified: Bool?
+    var gender: String?
+    var birthdate: String?
+    var zoneinfo: String?
+    var locale: String?
+    var phone_number: String?
+    var phone_number_verified: Bool?
+    var address: AddressClaim
+    var updated_at: T?
+}
+
+struct AddressClaim {
+    var formatted: String?
+    var street_address: String?
+    var locality: String?
+    var region: String?
+    var postal_code: String?
+    var country: String?
+}
+
+enum CodingKeys {
+    let iss: ?
+    let sub: ?
+    let aud: ?
+    let exp: ?
+    let iat: ?
+    let auth_time: ?
+    let nonce: ?
+    let acr: ?
+    let amr: ?
+    let azp: ?
+    let name: ?
+    let given_name: ?
+    let family_name: ?
+    let middle_name: ?
+    let nickname: ?
+    let preferred_username: ?
+    let profile: ?
+    let picture: ?
+    let website: ?
+    let email: ?
+    let email_verified: ?
+    let gender: ?
+    let birthdate: ?
+    let zoneinfo: ?
+    let locale: ?
+    let phone_number: ?
+    let phone_number_verified: ?
+    let address: ?
+    let updated_at: ?
+}
+
+enum CodingKeys {
+    let formatted: ?
+    let street_address: ?
+    let locality: ?
+    let region: ?
+    let postal_code: ?
+    let country: ?
+}
+
+class ClaimsStandardJWT {
+    var iss: String?
+    var sub: String?
+    var aud: SaySSG?
+    var exp: T?
+    var nbf: T?
+    var iat: T?
+    var jti: String?
+}
+
+enum CodingKeys {
+    let iss: ?
+    let sub: ?
+    let aud: ?
+    let exp: ?
+    let nbf: ?
+    let iat: ?
+    let jti: ?
+}
+
+struct Header {
+    var typ: String?
+    var alg: String?
+    var jku: String?
+    var jwk: String?
+    var kid: String?
+    var x5u: String?
+    var x5c: SaySSG?
+    var x5t: String?
+    var x5tS256: String?
+    var cty: String?
+    var crit: SaySSG?
+}
+
+enum CodingKeys {
+    let typ: ?
+    let alg: ?
+    let jku: ?
+    let jwk: ?
+    let kid: ?
+    let x5u: ?
+    let x5c: ?
+    let x5t: ?
+    let x5tS256: ?
+    let cty: ?
+    let crit: ?
+}
+
+struct JWT {
+    var header: Header
+    var claims: x
+}
+
+enum CodingKeys {
+    let header: ?
+    let claims: ?
+}
+
+class JWTDecoder {
+    let keyIDToVerifier: TSgSSc
+    let jwtVerifier: T?
+}
+
+class _JWTDecoder {
+    var header: T
+    var claims: T
+    var keyID: String?
+    var codingPath: SayT_pG
+    var userInfo: SDyTypG
+}
+
+struct UnkeyedContainer {
+    var decoder: _JWTDecoder
+}
+
+struct _JWTKeyedDecodingContainer {
+    let decoder: _JWTDecoder
+    var header: T
+    var claims: T
+    var codingPath: SayT_pG
+}
+
+class JWTEncoder {
+    let keyIDToSigner: TSgSSc
+    let jwtSigner: T?
+}
+
+class _JWTEncoder {
+    var claims: String?
+    var header: String?
+    var jwtSigner: T?
+    let keyIDToSigner: TSgSSc
+    var codingPath: SayT_pG
+    var userInfo: SDyTypG
+}
+
+struct UnkeyedContainer {
+    var encoder: _JWTEncoder
+}
+
+struct _JWTKeyedEncodingContainer {
+    let encoder: _JWTEncoder
+    var codingPath: SayT_pG
+}
+
+struct JWTError {
+    let errorDescription: String?
+    let internalError: InternalError
+}
+
+enum InternalError {
+    let invalidJWTString: ?
+    let failedVerification: ?
+    let osVersionToLow: ?
+    let invalidPrivateKey: ?
+    let invalidData: ?
+    let invalidKeyID: ?
+    let missingPEMHeaders: ?
+}
+
+struct T {
+    let name: String
+    let signerAlgorithm: T_p
+}
+
+struct T {
+    let verifierAlgorithm: T_p
+}
+
+struct NoneAlgorithm {
+    let name: String
+}
+
+enum T {
+    let certificate: ?
+    let publicKey: ?
+    let privateKey: ?
+}
+
+protocol SwiftJWT15SignerAlgorithmP {
+}
+
+struct ValidateClaimsResult {
+    let description: String
+}
+
+protocol SwiftJWT17VerifierAlgorithmP {
+}
+
+protocol LoggerAPI0A0P {
+}
+
+class Log {
+}
+
+enum LoggerMessageType {
+    let entry: ?
+    let exit: ?
+    let debug: ?
+    let verbose: ?
+    let info: ?
+    let warning: ?
+    let error: ?
+}
+
+class Lock {
+    let mutex: SpyTG
+}
+
+class ReadWriteLock {
+    let rwlock: SpyTG
+}
+
+struct _opaque_pthread_mutex_t {
+    var __sig: Int
+    var __opaque: At
+}
+
+struct _opaque_pthread_rwlock_t {
+    var __sig: Int
+    var __opaque: At
+}
+
+struct __sFILE {
+    var _p: SpyTG?
+    var _r: T
+    var _w: T
+    var _flags: T
+    var _file: T
+    var _bf: __sbuf
+    var _lbfsize: T
+    var _cookie: Sv?
+    var _close: TSvSgXC?
+    var _read: TSvSg_SpyTGSgAAtXC?
+    var _seek: TSvSg_AATtXC?
+    var _write: TSvSg_SPyTGSgAAtXC?
+    var _ub: __sbuf
+    var _extra: T?
+    var _ur: T
+    var _ubuf: At
+    var _nbuf: T
+    var _lb: __sbuf
+    var _blksize: T
+    var _offset: T
+}
+
+struct __sbuf {
+    var _base: SpyTG?
+    var _size: T
+}
+
+protocol Logging10LogHandlerP {
+}
+
+protocol Logging017_SwiftLogSendableC7HandlerP {
+}
+
+struct Logger {
+    var _storage: Storage
+}
+
+class Storage {
+    var label: String
+    var handler: T_p
+}
+
+enum LoggingSystem {
+}
+
+class RWLockedValueBox {
+    let lock: ReadWriteLock
+    var storage: x
+}
+
+optional MetadataValue {
+    let string: String
+    let stringConvertible: T_p
+    let dictionary: SDySSTG
+    let array: SayTG
+}
+
+enum Level {
+    let trace: ?
+    let debug: ?
+    let info: ?
+    let notice: ?
+    let warning: ?
+    let error: ?
+    let critical: ?
+}
+
+struct Message {
+    var value: String
+}
+
+struct MultiplexLogHandler {
+    var handlers: SayT_pG
+    var effectiveLogLevel: Level
+    var _metadataProvider: T?
+}
+
+struct StreamLogHandler {
+    let stream: T_p
+    let label: String
+    var logLevel: Level
+    var metadataProvider: T?
+    var prettyMetadata: String?
+    var metadata: SDySSTG
+}
+
+struct SwiftLogNoOpLogHandler {
+}
+
+struct StdioOutputStream {
+    let file: SpyTG
+    let flushMode: FlushMode
+}
+
+enum FlushMode {
+    let undefined: ?
+    let always: ?
+}
+
+struct ReplaceOnce {
+    var initialized: Bool
+    var _underlying: x
+    let violationErrorMessage: String
+}
+
+struct ReplaceOnceBox {
+    let storage: RWLockedValueBox
+}
+
+protocol Logging17_SwiftLogSendableP {
+}
+
+struct MetadataProvider {
+    let _provideMetadata: �T
+}
+
+class-proto KituraContracts11BodyDecoderP {
+}
+
+class-proto KituraContracts11BodyEncoderP {
+}
+
+struct BodyFormat {
+    let type: String
+}
+
+struct UnsupportedBodyFormatError {
+    let bodyFormat: BodyFormat
+}
+
+class Coder {
+    let dateFormatter: NSDateFormatterC
+}
+
+enum DateError {
+    let unknownStrategy: ?
+}
+
+class QueryDecoder {
+    var codingPath: SayT_pG
+    var userInfo: SDyTypG
+    var dictionary: SG
+    var dateDecodingStrategy: T
+}
+
+struct KeyedContainer {
+    var decoder: QueryDecoder
+}
+
+struct UnkeyedContainer {
+    var decoder: QueryDecoder
+}
+
+class QueryEncoder {
+    var dictionary: SG
+    var anyDictionary: SDySSypG
+    var codingPath: SayT_pG
+    var userInfo: SDyTypG
+    var dateEncodingStrategy: T
+}
+
+struct KeyedContainer {
+    var encoder: QueryEncoder
+}
+
+struct UnkeyedContainer {
+    var encoder: QueryEncoder
+}
+
+struct RequestError {
+    let rawValue: Int
+    let reason: String
+    var body: ErrorBody
+    var bodyDataEncoder: TTKc?
+}
+
+optional ErrorBody {
+    let codable: Se_SEp
+    let data: T_Tt
+}
+
+protocol KituraContracts11QueryParamsP {
+}
+
+enum QueryParamsError {
+    let invalidValue: ?
+}
+
+enum IdentifierError {
+    let invalidValue: ?
+}
+
+protocol KituraContracts10IdentifierP {
+}
+
+optional Order {
+    let asc: String
+    let desc: String
+}
+
+struct Ordering {
+    var order: SayTG?
+}
+
+struct Pagination {
+    var start: Int
+    var size: Int
+}
+
+enum Operator {
+    let or: ?
+    let equal: ?
+    let lowerThan: ?
+    let lowerThanOrEqual: ?
+    let greaterThan: ?
+    let greaterThanOrEqual: ?
+    let exclusiveRange: ?
+    let inclusiveRange: ?
+}
+
+protocol KituraContracts9OperationP {
+}
+
+struct GreaterThan {
+    var value: x
+    let operator: Operator
+}
+
+struct GreaterThanOrEqual {
+    var value: x
+    let operator: Operator
+}
+
+struct LowerThan {
+    var value: x
+    let operator: Operator
+}
+
+struct LowerThanOrEqual {
+    var value: x
+    let operator: Operator
+}
+
+struct InclusiveRange {
+    var start: x
+    var end: x
+    let operator: Operator
+}
+
+struct ExclusiveRange {
+    var start: x
+    var end: x
+    let operator: Operator
+}
+
+enum CodingKeys {
+    let asc: ?
+    let desc: ?
+}
+
+enum CodingKeys {
+    let order: ?
+}
+
+enum CodingKeys {
+    let start: ?
+    let size: ?
+}
+
+enum CodingKeys {
+    let value: ?
+}
+
+enum CodingKeys {
+    let value: ?
+}
+
+enum CodingKeys {
+    let value: ?
+}
+
+enum CodingKeys {
+    let value: ?
+}
+
+enum CodingKeys {
+    let start: ?
+    let end: ?
+}
+
+enum CodingKeys {
+    let start: ?
+    let end: ?
+}
+
+class CryptorRSA {
+}
+
+class RSAData {
+    let data: T
+    var type: DataType
+}
+
+enum DataType {
+    let plaintextType: ?
+    let encryptedType: ?
+    let signedType: ?
+}
+
+class PlaintextData {
+}
+
+class EncryptedData {
+}
+
+class SignedData {
+}
+
+enum Algorithm {
+    let sha1: ?
+    let sha224: ?
+    let sha256: ?
+    let sha384: ?
+    let sha512: ?
+    let gcm: ?
+}
+
+struct Error {
+    let domain: String
+    var errorCode: T
+    var errorReason: String?
+}
+
+class RSAKey {
+    let pemString: String
+    let reference: T
+    var type: KeyType
+}
+
+enum KeyType {
+    let publicType: ?
+    let privateType: ?
+}
+
+struct KeySize {
+    let bits: Int
+}
+
+class PublicKey {
+}
+
+class PrivateKey {
+}
+
+protocol Cryptor12CryptoDigestP {
+}
+
+struct CC_SHA512state_st {
+    var count: T_AAt
+    var hash: At
+    var wbuf: At
+}
+
+struct CC_SHA256state_st {
+    var count: T_AAt
+    var hash: At
+    var wbuf: At
+}
+
+struct CC_SHA1state_st {
+    var h0: T
+    var h1: T
+    var h2: T
+    var h3: T
+    var h4: T
+    var Nl: T
+    var Nh: T
+    var data: At
+    var num: T
+}
+
+struct CC_MD5state_st {
+    var A: T
+    var B: T
+    var C: T
+    var D: T
+    var Nl: T
+    var Nh: T
+    var data: At
+    var num: T
+}
+
+struct CC_MD4state_st {
+    var A: T
+    var B: T
+    var C: T
+    var D: T
+    var Nl: T
+    var Nh: T
+    var data: At
+    var num: T
+}
+
+struct CC_MD2state_st {
+    var num: T
+    var data: At
+    var cksm: At
+    var state: At
+}
+
+struct CCHmacContext {
+    var ctx: At
+}
+
+class Cryptor {
+    var accumulator: SayTG
+}
+
+class Digest {
+    var status: T
+    var engine: DigestEngine
+}
+
+enum Algorithm {
+    let md2: ?
+    let md4: ?
+    let md5: ?
+    let sha1: ?
+    let sha224: ?
+    let sha256: ?
+    let sha384: ?
+    let sha512: ?
+}
+
+protocol Cryptor12DigestEngine33_F1AC27FC5C2A4DDFEAEBCB82C1055BD5LLP {
+}
+
+class DigestEngineCC {
+    let context: SpyxG
+    var initializer: TSpyxGc
+    var updater: TSpyxG_SVTtc
+    var finalizer: TSpyTG_SpyxGtc
+    var length: T
+}
+
+class HMAC {
+    var status: T
+    let context: SpyTG
+    var algorithm: Algorithm
+}
+
+enum Algorithm {
+    let md5: ?
+    let sha1: ?
+    let sha224: ?
+    let sha256: ?
+    let sha384: ?
+    let sha512: ?
+}
+
+class PBKDF {
+}
+
+enum PseudoRandomAlgorithm {
+    let sha1: ?
+    let sha224: ?
+    let sha256: ?
+    let sha384: ?
+    let sha512: ?
+}
+
+class Random {
+}
+
+enum T {
+    let success: ?
+    let paramError: ?
+    let bufferTooSmall: ?
+    let memoryFailure: ?
+    let alignmentError: ?
+    let decodeError: ?
+    let unimplemented: ?
+    let overflow: ?
+    let rngFailure: ?
+}
+
+enum CryptorError {
+    let fail: T_SSt
+    let success: ?
+    let invalidKeySize: ?
+    let invalidIVSizeOrLength: ?
+}
+
+class T {
+    var status: T
+    var haveContext: Bool
+    var context: SpyTSgG
+}
+
+enum Operation {
+    let encrypt: ?
+    let decrypt: ?
+}
+
+optional ValidKeySize {
+    let fixed: Int
+    let discrete: SaySiG
+    let range: Si_Sit
+}
+
+struct Options {
+    let rawValue: Int
+}
+
+enum Algorithm {
+    let aes: ?
+    let aes128: ?
+    let aes192: ?
+    let aes256: ?
+    let des: ?
+    let tripleDes: ?
+    let cast: ?
+    let rc2: ?
+    let blowfish: ?
+}
+
+protocol Cryptor9UpdatableP {
+}
+
+struct CryptoUtils {
+}
+
+struct SecKeyAlgorithm {
+    let rawValue: CFString
+}
+
+struct ASN1 {
+}
+
+optional ASN1Element {
+    let seq: elements_t
+    let integer: int_t
+    let bytes: data_t
+    let constructed: tag_T4elemt
+    let unknown: ?
+}
+
+protocol CryptorECC13ECEncryptableP {
+}
+
+struct ECError {
+    let localizedDescription: String
+    let internalError: InternalError
+}
+
+enum InternalError {
+    let invalidPEMString: ?
+    let unknownPEMHeader: ?
+    let failedBase64Encoding: ?
+    let failedASN1Decoding: ?
+    let unsupportedCurve: ?
+    let failedNativeKeyCreation: ?
+    let failedEvpInit: ?
+    let failedSigningAlgorithm: ?
+    let invalidRSLength: ?
+    let failedEncryptionAlgorithm: ?
+    let failedUTF8Decoding: ?
+    let failedDecryptionAlgorithm: ?
+}
+
+class ECPrivateKey {
+    let curveId: String
+    let curve: T
+    let pemString: String
+    let nativeKey: T
+    let pubKeyBytes: T
+    var stripped: Bool
+}
+
+class ECPublicKey {
+    let curveId: String
+    let curve: T
+    let nativeKey: T
+    let pemString: String
+}
+
+protocol CryptorECC10ECSignableP {
+}
+
+struct ECSignature {
+    let r: T
+    let s: T
+    let asn1: T
+}
+
+struct T {
+    let internalRepresentation: InternalRepresentation
+    let signingAlgorithm: SecKeyAlgorithm
+    let encryptionAlgorithm: SecKeyAlgorithm
+    let hashEngine: SpyTGSgSVSg_TACtc
+    let hashLength: T
+    let keySize: Int
+}
+
+enum InternalRepresentation {
+    let prime256v1: ?
+    let secp384r1: ?
+    let secp521r1: ?
+}
+
+class Decompressor {
+    var strm: z_stream_s
+    var buffer: SayTG
+    var inflateInitialized: Bool
+    let windowBits: Int
+}
+
+class Compressor {
+    var strm: z_stream_s
+    var buffer: SayTG
+    var deflateInitialized: Bool
+    let windowBits: Int
+}
+
+struct z_stream_s {
+    var next_in: SpyTG?
+    var avail_in: T
+    var total_in: UInt
+    var next_out: SpyTG?
+    var avail_out: T
+    var total_out: UInt
+    var msg: SpyTG?
+    var state: T?
+    var zalloc: SvSgAA_TABtXC?
+    var zfree: ySvSg_AAtXC?
+    var opaque: Sv?
+    var data_type: T
+    var adler: UInt
+    var reserved: UInt
+}
+
+struct SSLClientCertificateError {
+    var errorDescription: String?
+}
+
+class SSLClientCertificate {
+    let streamSSLCertificates: NSArrayC
+}
+
+protocol Starscream17SSLTrustValidatorP {
+}
+
+class SSLCert {
+    var certData: T?
+    var key: T?
+}
+
+class SSLSecurity {
+    var validatedDN: Bool
+    var validateEntireChain: Bool
+    var isReady: Bool
+    var certificates: SayTG?
+    var pubKeys: SayTG?
+    var usePublicKeys: Bool
+}
+
+enum CloseCode {
+    let normal: ?
+    let goingAway: ?
+    let protocolError: ?
+    let protocolUnhandledType: ?
+    let noStatusReceived: ?
+    let encoding: ?
+    let policyViolated: ?
+    let messageTooBig: ?
+}
+
+enum ErrorType {
+    let outputStreamWriteError: ?
+    let compressionError: ?
+    let invalidSSLError: ?
+    let writeTimeoutError: ?
+    let protocolError: ?
+    let upgradeError: ?
+    let closeError: ?
+}
+
+struct WSError {
+    let type: ErrorType
+    let message: String
+    let code: Int
+}
+
+class-proto Starscream15WebSocketClientP {
+}
+
+struct SSLSettings {
+    let useSSL: Bool
+    let disableCertValidation: Bool
+    var overrideTrustHostname: Bool
+    var desiredTrustHostname: String?
+    let sslClientCertificate: T?
+    let cipherSuites: SayTG?
+}
+
+class-proto Starscream16WSStreamDelegateP {
+}
+
+protocol Starscream8WSStreamP {
+}
+
+enum? FoundationStream {
+    let workQueue: OS_dispatch_queueC
+    var inputStream: NSInputStreamC?
+    var outputStream: NSOutputStreamC?
+    var delegate: WSStreamDelegate
+    let BUFFER_MAX: Int
+    var enableSOCKSProxy: Bool
+}
+
+class-proto Starscream17WebSocketDelegateP {
+}
+
+class-proto Starscream21WebSocketPongDelegateP {
+}
+
+class-proto Starscream25WebSocketAdvancedDelegateP {
+}
+
+enum? WebSocket {
+    var callbackQueue: OS_dispatch_queueC
+    let headerWSUpgradeName: String
+    let headerWSUpgradeValue: String
+    let headerWSHostName: String
+    let headerWSConnectionName: String
+    let headerWSConnectionValue: String
+    let headerWSProtocolName: String
+    let headerWSVersionName: String
+    let headerWSVersionValue: String
+    let headerWSExtensionName: String
+    let headerWSKeyName: String
+    let headerOriginName: String
+    let headerWSAcceptName: String
+    let BUFFER_MAX: Int
+    let FinMask: T
+    let OpCodeMask: T
+    let RSVMask: T
+    let RSV1Mask: T
+    let MaskMask: T
+    let PayloadLenMask: T
+    let MaxFrameSize: Int
+    let httpSwitchProtocolCode: Int
+    let supportedSSLSchemes: SaySSG
+    var delegate: WebSocketDelegate
+    var advancedDelegate: WebSocketAdvancedDelegate
+    var pongDelegate: WebSocketPongDelegate
+    var onConnect: yyc?
+    var onDisconnect: yT_pSgc?
+    var onText: ySSc?
+    var onData: yTc?
+    var onPong: yTSgc?
+    var onHttpResponseHeaders: SGc?
+    var disableSSLCertValidation: Bool
+    var overrideTrustHostname: Bool
+    var desiredTrustHostname: String?
+    var sslClientCertificate: T?
+    var enableCompression: Bool
+    var security: T_p?
+    var enabledSSLCipherSuites: SayTG?
+    var request: T
+    var respondToPingWithPong: Bool
+    var stream: WSStream
+    var connected: Bool
+    var isConnecting: Bool
+    let mutex: NSLockC
+    var compressionState: CompressionState
+    var writeQueue: NSOperationQueueC
+    var readStack: SayTG
+    var inputQueue: SayTG
+    var fragBuffer: T?
+    var certValidated: Bool
+    var didDisconnect: Bool
+    var readyToWrite: Bool
+    var headerSecKey: String
+}
+
+enum OpCode {
+    let continueFrame: ?
+    let textFrame: ?
+    let binaryFrame: ?
+    let connectionClose: ?
+    let ping: ?
+    let pong: ?
+}
+
+class WSResponse {
+    var isFin: Bool
+    var code: OpCode
+    var bytesLeft: Int
+    var frameCount: Int
+    var buffer: NSMutableDataC?
+    let firstFrame: T
+}
+
+struct CompressionState {
+    var supportsCompression: Bool
+    var messageNeedsDecompression: Bool
+    var serverMaxWindowBits: Int
+    var clientMaxWindowBits: Int
+    var clientNoContextTakeover: Bool
+    var serverNoContextTakeover: Bool
+    var decompressor: T?
+    var compressor: T?
+}

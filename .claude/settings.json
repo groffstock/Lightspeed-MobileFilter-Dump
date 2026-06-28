@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -c '^class\\\\|^struct\\\\|^enum' __TRACKED_VAR__/swift_dump.txt)",
+      "Bash(grep -E '^\\(class|struct|enum\\) [A-Za-z]' __TRACKED_VAR__/swift_dump.txt)",
+      "Bash(awk '/^\\(struct|class|enum\\) \\(FlowInfo|VerdictResult|VerdictAction|TelemetryDataModel|Report|ApiRouter|RemoteConfig\\) /{p=1} p{print} /^}/{if\\(p\\){print\"\";p=0}}' C:/Users/roomb/AppData/Local/Temp/claude/c--Users-roomb-Documents-Projects-Mach-O-Binary-Decryption/adfc2f9f-9ee2-4ce8-b410-b0983a13519d/scratchpad/swift_dump.txt)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 __TRACKED_VAR__/classdump.py MobileFilter MobileFilter.objc.h __TRACKED_VAR__/binds.json)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 __TRACKED_VAR__/swiftdump.py MobileFilter MobileFilter.swift.txt)",
+      "Bash(mkdir -p tools)",
+      "Bash(cp __TRACKED_VAR__/classdump.py __TRACKED_VAR__/swiftdump.py tools/)",
+      "Bash(python3 -m pip install --quiet capstone)",
+      "Bash(python3 -c \"import capstone; print\\('capstone', capstone.__version__\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python3 __TRACKED_VAR__/disasm.py FilterDataProvider handleNewFlow __TRACKED_VAR__/binds.json)",
+      "Bash(cd \"c:/Users/roomb/Documents/Projects/Mach-O Binary Decryption\")",
+      "Bash(PYTHONIOENCODING=utf-8 python3 __TRACKED_VAR__/disasm.py 0x1000165a8 200)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 __TRACKED_VAR__/funcsum.py __TRACKED_VAR__/binds.json 0x1000165a8)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 __TRACKED_VAR__/funcsum.py __TRACKED_VAR__/binds.json index 'jwt|license|lsfilter|remoteconfig|api[_ ]?key|bearer|token')"
+    ]
+  }
+}
